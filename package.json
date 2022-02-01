@@ -27,7 +27,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
-    "@emurgo/cardano-serialization-lib-browser": "^9.1.2",
+    "@emurgo/cardano-serialization-lib-browser": "^9.1.4",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^3.4.1",
     "browserify-zlib": "^0.2.0",

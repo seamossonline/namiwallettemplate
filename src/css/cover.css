@@ -8,16 +8,16 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: rgb(85, 15, 15);;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
-.btn-default:focus {
+.btn-default:focus, button {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: rgb(85, 15, 15);
   border: 1px solid #fff;
 }
 
@@ -158,6 +158,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 80%;
   }
 }

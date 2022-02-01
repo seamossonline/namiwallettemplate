@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, p {
     font-family: helvetica;
-    color: #3e3e3e;
+    color: #333333;
   }
   .description {
     font-size: 14px;
-    color: #9e9e9e;
+    color: #e9e5e5;
   }
   .awful-selfie{
     background: url(../img/bg.jpg);
@@ -13,3 +13,47 @@ h1, h2, h3, h4, h5, p {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+
+  button {
+    background-color: #3e3e3e;
+    border-radius: 15px;
+    color: #A9D26A;
+  }
+
+  #namiBtn {
+    font-size: 2em;
+  }
+
+.cover-container {
+  background-color: #333333;
+  padding: 1em;
+  border-radius: 2em;
+  color: #e9e5e5;
+}
+
+.cover-container h1, .cover-container h2, .cover-container h3 {
+  color: #e9e5e5;
+}
+
+.site-wrapper-inner {
+  background-color: #FAEBD7;
+}
+
+
+#webpack-dev-server-client-overlay {
+  width: 30vw !important;
+}
+
+.linkerButton {
+  background-color: #8080FF;
+  padding: 1em;
+  margin-left:10px;
+  color: #000000;
+}
+
+.linkerButton-connected {
+  background-color: #00FF00 !important;
+  padding: 1em;
+  margin-left:10px;
+  color: #000000;
+}

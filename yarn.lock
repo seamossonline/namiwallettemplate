@@ -24,7 +24,7 @@
   "resolved" "https://registry.npmjs.org/@emurgo/cardano-serialization-lib-asmjs/-/cardano-serialization-lib-asmjs-9.1.4.tgz"
   "version" "9.1.4"
 
-"@emurgo/cardano-serialization-lib-browser@^9.1.2":
+"@emurgo/cardano-serialization-lib-browser@^9.1.4":
   "integrity" "sha512-W+bdbPx2RTZilMYGi5Bo8LmMBgWlGfNggRqdVlMRgk7jQbMa61P88f4C0CO3GMdzOOTKH2K0yXg0hr/9cuh7tA=="
   "resolved" "https://registry.npmjs.org/@emurgo/cardano-serialization-lib-browser/-/cardano-serialization-lib-browser-9.1.4.tgz"
   "version" "9.1.4"

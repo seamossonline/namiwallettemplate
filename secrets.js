@@ -1,0 +1,1 @@
+BLOCKFROST_ID = mainnetqmneXXRBONof2IEtLePeDtNikLzRComX

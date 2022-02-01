@@ -2,34 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CHEFF Nami Template</title>
+    <title>Wallet Integrator</title>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" src="./src/css/style.css">
 </head>
 <body>
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
         <div class="masthead clearfix">
+          <div class="masthead-brand">
+          <h3> Wallet Integrator</h3>
+            <p>Discord, Nami sync and API manager</p>
+          </div>
           <div class="inner">
-            <h3 class="masthead-brand">CHEFF Nami Template</h3>
+    
             <nav>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><button id="namiBtn1" class="linkerButton">Nami</button></li>
+              </ul>
+              <ul class="nav masthead-nav">
+                <li class="active"> <button id="showAssBtn" class="linkerButton">My Assets</button></li>
               </ul>
             </nav>
           </div>
         </div>
 
         <div class="inner cover">
-          <div class="row">
-            <h1 class="cover-heading">Hello user</h1>
-            <button id="buyBtn">Buy!</button>
+          <div class="row"><h2 class="cover-heading">User Profile</h2>
+            <div id="walletInfoBox" class="walletInfoBox">
+              <div id="walletInfoBox_assets"></div>
+            </div> <!-- Seamoss: .TS content injection -->
+           
           </div>
         </div>
 
         <div class="mastfoot">
           <div class="inner">
-            <p>Cheff LABS <a href="https://www.cheffwallets.com/">CheffWallets</a>, by <a href="https://twitter.com/cheffwallets">@cheffwallets</a>.</p>
+            <p><a href="https://dropnir.io">Seamoss</a>, <a href="https://twitter.com/Seamoss">@wellspringagncy</a>.</p>
           </div>
         </div>
       </div>

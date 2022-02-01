@@ -22,7 +22,7 @@ async function getComponent() {
     if (curent === "/mint.html") {
         const app = await import('./js/mint/app.mjs');
         async function activateCardano() {
-            const promise = await cardano.enable()
+            const promise = await cardano.nami.enable()
             $("#connectBtn").text('Connected');
             $("#connectBtn").attr('class', 'btn btn-success');
         }
