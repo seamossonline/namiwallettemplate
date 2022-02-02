@@ -14,6 +14,19 @@ h1, h2, h3, h4, h5, p {
     background-repeat: no-repeat;
   }
 
+#balancewidget {
+  padding: 1em;
+  background-color: #000000;
+  margin-bottom: 10px;
+}
+
+  .hudText {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    color: #A9D26A;
+  }
+
   button {
     background-color: #3e3e3e;
     border-radius: 15px;
@@ -25,13 +38,11 @@ h1, h2, h3, h4, h5, p {
   }
 
 .cover-container {
-  background-color: #333333;
   padding: 1em;
-  border-radius: 2em;
   color: #e9e5e5;
 }
 
-.cover-container h1, .cover-container h2, .cover-container h3 {
+.inner-cover h1, .inner-cover h2, .inner-cover h3, .inner-cover p {
   color: #e9e5e5;
 }
 
@@ -42,6 +53,10 @@ h1, h2, h3, h4, h5, p {
 
 #webpack-dev-server-client-overlay {
   width: 30vw !important;
+}
+
+#walletInfoBox_assets {
+  vertical-align: text-bottom;
 }
 
 .linkerButton {
@@ -56,4 +71,9 @@ h1, h2, h3, h4, h5, p {
   padding: 1em;
   margin-left:10px;
   color: #000000;
+}
+
+.inner-cover {
+  background-color:#2D2A2D;
+  border-radius: 1em;
 }

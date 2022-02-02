@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bootstrap": "^5.1.9",
     "css-loader": "^6.2.0",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
@@ -27,6 +28,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "@blockfrost/blockfrost-js": "^4.0.1",
     "@emurgo/cardano-serialization-lib-browser": "^9.1.4",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^3.4.1",
@@ -34,8 +36,11 @@
     "crypto-browserify": "^3.12.0",
     "jquery": "^3.6.0",
     "nami-wallet-api": "^1.1.9",
+    "node": "^14.18.3",
     "node-fetch": "^2.6.6",
+    "os-browserify": "^0.3.0",
     "popper.js": "^1.16.1",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "update": "^0.7.4"
   }
 }

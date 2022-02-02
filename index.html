@@ -7,17 +7,23 @@
     <link rel="stylesheet" src="./src/css/style.css">
 </head>
 <body>
+  
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
         <div class="masthead clearfix">
-          <div class="masthead-brand">
-          <h3> Wallet Integrator</h3>
-            <p>Discord, Nami sync and API manager</p>
+          
+          <div id="balancewidget">
+            Available:<div class="hudText" id="walletInfoBox_avail"></div>
+            Locked:<div class="hudText" id="walletInfoBox_locked"></div>
           </div>
           <div class="inner">
-    
+            
             <nav>
+              <div class="masthead-brand">
+                <h3> Wallet Integrator</h3>
+                </div>
+
               <ul class="nav masthead-nav">
                 <li class="active"><button id="namiBtn1" class="linkerButton">Nami</button></li>
               </ul>
@@ -28,7 +34,7 @@
           </div>
         </div>
 
-        <div class="inner cover">
+        <div class="inner-cover">
           <div class="row"><h2 class="cover-heading">User Profile</h2>
             <div id="walletInfoBox" class="walletInfoBox">
               <div id="walletInfoBox_assets"></div>

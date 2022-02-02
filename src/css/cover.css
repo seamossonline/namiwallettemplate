@@ -48,7 +48,7 @@ body {
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: bottom; /* seamoss: was middle */
 }
 .cover-container {
   margin-right: auto;
@@ -137,7 +137,7 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: relative; /* Seamoss: was: fixed */
     top: 0;
   }
   .mastfoot {
@@ -158,6 +158,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 80%;
+    width: 100%; /* Seamoss: was: 80% */
   }
 }
