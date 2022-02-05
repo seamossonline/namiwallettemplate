@@ -10,7 +10,11 @@ import './css/cover.css'
 import './css/style.css'
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
-import './index.js';
+//import 'main.js'; // Seamoss: this is important but running into errors pointint to package.json
+
+//import './main.js';
+// The request './main' failed to resolve only because it was resolved as fully specified
+
 
 /*
 const getNaddressData = {
@@ -18,6 +22,9 @@ const getNaddressData = {
     amount: 1
 }
 */ // Seamoss: no longer using to auth
+
+/// Seamoss - window.cardano test
+/// Seamoss - end window.cardano test
 
 let Nami = await NamiWalletApi(  //Seamoss: was const not let //Seamoss: was global, not nested in toggleNami
     window.cardano,

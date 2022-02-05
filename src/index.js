@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import logoJig from './App';
+//import logoJig from './App'; //Seamoss cut
 import reportWebVitals from './reportWebVitals';
 import logo from './fragmint.jpg';
 

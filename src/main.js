@@ -1,4 +1,5 @@
-import logMessage from './js/logger.js'
+//import logMessage from './js/logger.js'  //Seamoss: commented out this original for the below.
+import logMessage from './logger.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'popper.js';
 import 'jquery';
@@ -6,15 +7,19 @@ import './css/cover.css'
 import regeneratorRuntime from "regenerator-runtime";
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
-// Seamoss: this main.js began with git repo 'namiwallettemplate' but is also integrating code that assumes a main.js from tutorial: https://stackabuse.com/a-sqlite-tutorial-with-node-js/
-const Promise = require('bluebird')
-const AppDAO = require('./dao')
-const ProjectRepository = require('./project_repository')
-const TaskRepository = require('./task_repository')
-//////////////////// SQLite tutorial code continues
+//import './index'; // Seamoss
+//import './index.js'; // Seamoss]
 
-function main() {
-    const dao = new AppDAO('./database.sqlite3')
+// Seamoss: this main.js began with git repo 'namiwallettemplate' but is also integrating code that assumes a main.js from tutorial: https://stackabuse.com/a-sqlite-tutorial-with-node-js/
+console.log('Entering SQLite portion of main.js');
+
+const Promise = require('bluebird')
+const AppDAO = require('../dao') // Seamoss: was ./dao, but the original namiwallettemplate repo has main.js under /src, so leaving it there and updating references.
+const ProjectRepository = require('../project_repository')  //Seamoss: updating references
+const TaskRepository = require('../task_repository')  //Seamoss: updating references
+//////////////////// SQLite tutorial code continues
+function mains() {
+    const dao = new AppDAO('../database.sqlite3')
     const blogProjectData = { name: 'Write Node.js - SQLite Tutorial' }
     const projectRepo = new ProjectRepository(dao)
     const taskRepo = new TaskRepository(dao)
@@ -74,6 +79,8 @@ function main() {
 
 //////////////////// SQLite tutorial code ends (for now)
 
+
+
 // Log message to console
 const curent = window.location.pathname;
 logMessage(window.location.pathname);
@@ -81,6 +88,7 @@ logMessage(window.location.pathname);
 async function getComponent() {
     if (curent === "/") {
         const nami_lib = await import('nami-wallet-api');
+        console.log('At least we are in main.js instead of only index.ts');
     }
     if (curent === "/buy.html") {
         const { default: single } = await import('./js/wallet/coinSelection.mjs');
@@ -104,6 +112,7 @@ async function getComponent() {
         const { default: app } = await import('./js/assets/app.mjs');
     }
     const element = document.createElement('script');
+    export default mains; //Seamoss added
     return element;
 }
 
@@ -111,4 +120,3 @@ getComponent().then((component) => {
     document.body.appendChild(component);
 });
 
-main() // Seamoss: relocated this to the bottom, was part of SQLite tutorial code near top.
