@@ -10,7 +10,7 @@ import './css/cover.css'
 import './css/style.css'
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
-
+import './index.js';
 
 /*
 const getNaddressData = {
@@ -27,6 +27,22 @@ let Nami = await NamiWalletApi(  //Seamoss: was const not let //Seamoss: was glo
 
 let namiAddy = await Nami.getAddress();
 
+console.log('Entering Nami module testing');
+
+
+/*
+console.log('Entering SQLite3 testing');
+//////////// Seamoss: SQLite Training
+const sqlite3 = require('sqlite3').verbose();
+let db = new sqlite3.Database(':memory:', (err) => {
+    if (err) {
+        return console.error(err.message);
+    }
+    console.log('Connected to an in-memory SQLite DB.');
+});
+
+db.close();
+*/
 
 console.log('Entering Blockfrost testing');
 /*
