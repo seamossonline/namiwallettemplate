@@ -5,7 +5,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import logo from './fragmint.jpg';
 
+
 console.log('index.js is running.');
+
 
 function logoJig() {
     return (

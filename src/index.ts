@@ -10,11 +10,38 @@ import './css/cover.css'
 import './css/style.css'
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
+import './bot.js';  //Seamoss
+
+
+//CIP30:
+//import { WalletApi } from '@cardano-js-sdk/packages/cip30/src'
 //import 'main.js'; // Seamoss: this is important but running into errors pointint to package.json
+////const fuckingWallet = new window.cardano.nami.WalletApi();
 
 //import './main.js';
 // The request './main' failed to resolve only because it was resolved as fully specified
 
+/////////////////////////   CIP30 attempt
+/*
+const { NormalModuleReplacementPlugin } = require('webpack');
+{
+    resolve: {
+        fallback: {
+            // Node.js polyfills. May want to install as explicit dependencies.
+            stream: require.resolve('readable-stream'),
+                buffer: require.resolve('buffer'),
+    }
+    },
+    plugins: [
+        new NormalModuleReplacementPlugin(
+            /@emurgo\/cardano-serialization-lib-nodejs/,
+            '@emurgo/cardano-serialization-lib-browser'
+        )
+    ]
+}
+
+*/
+///////////////////////////////// End CIP30 Portion
 
 /*
 const getNaddressData = {
