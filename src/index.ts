@@ -10,7 +10,7 @@ import './css/cover.css'
 import './css/style.css'
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
-import './bot.js';  //Seamoss
+//import './bot.js';  //Seamoss
 
 
 //CIP30:
