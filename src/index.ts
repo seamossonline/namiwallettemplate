@@ -1,6 +1,7 @@
 declare const window: any;
 //const Blockfroster = require('@blockfrost/blockfrost-js');
 //import { BlockFrostAPI } from '@blockfrost/blockfrost-js/lib' // using import syntax
+console.log('index.ts import start');
 import { NamiWalletApi } from 'nami-wallet-api'
 import * as WASM_lib from '@emurgo/cardano-serialization-lib-browser'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +11,14 @@ import './css/cover.css'
 import './css/style.css'
 window.$ = window.jQuery = import("jquery");
 import 'bootstrap/js/dropdown.js';
+<<<<<<< Updated upstream
+=======
+console.log('index.ts import end');
+//import './main.js'; // Seamoss: this is important but running into errors pointint to package.json
+
+//import './main.js';
+// The request './main' failed to resolve only because it was resolved as fully specified
+>>>>>>> Stashed changes
 
 
 /*
@@ -19,14 +28,23 @@ const getNaddressData = {
 }
 */ // Seamoss: no longer using to auth
 
+<<<<<<< Updated upstream
 let Nami = await NamiWalletApi(  //Seamoss: was const not let //Seamoss: was global, not nested in toggleNami
+=======
+/// Seamoss - window.cardano test
+/// Seamoss - end window.cardano test
+
+const Nami = await NamiWalletApi(  //Seamoss: was const not let //Seamoss: was global, not nested in toggleNami
+>>>>>>> Stashed changes
     window.cardano,
     "mainnetqmneXXRBONof2IEtLePeDtNikLzRComX",
     WASM_lib
 )
+await Nami.enable()
 
 let namiAddy = await Nami.getAddress();
 
+<<<<<<< Updated upstream
 
 console.log('Entering Blockfrost testing');
 /*
@@ -103,6 +121,8 @@ const IPFS = new Blockfrost.BlockFrostIPFS({
 });
 ----------------------------------------------------------------------------- */
 
+=======
+>>>>>>> Stashed changes
 async function toggleNami() {
     await Nami.enable()
     let nUTXOs = await Nami.getUtxos();

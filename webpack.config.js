@@ -1,26 +1,28 @@
+console.log('webpack.config.js import start');
 import path from 'path'
 import webpack from 'webpack'
 import HtmlWebPackPlugin from "html-webpack-plugin"
+console.log('webpack.config.js import end');
 const __dirname = path.resolve();
 
 
 const generateHtmlPlugin = (title) => {
     return new HtmlWebPackPlugin({
-      title,
-      filename: `${title}.html`,
-      template: `./src/pages/${title}.html`,
+        title,
+        filename: `${title}.html`,
+        template: `./src/pages/${title}.html`,
     });
-  }
-  
-  const populateHtmlPlugins = (pagesArray) => {
+}
+
+const populateHtmlPlugins = (pagesArray) => {
     var res = [];
     pagesArray.forEach(page => {
-      res.push(generateHtmlPlugin(page));
+        res.push(generateHtmlPlugin(page));
     })
     return res;
-  }
-  
-  // const pages = populateHtmlPlugins(["index"]);
+}
+
+// const pages = populateHtmlPlugins(["index"]);
 
 export default {
     mode: 'development',
@@ -61,11 +63,11 @@ export default {
             },
             {
                 test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
+                use: ['style-loader', 'css-loader']
             },
             {
-               test: /\.(png|svg|jpg|gif)$/,
-               use: ['file-loader']
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader']
             }
         ]
     },
